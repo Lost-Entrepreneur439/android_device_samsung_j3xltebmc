@@ -65,12 +65,12 @@ void vendor_load_properties()
     std::string bootloader = GetProperty("ro.bootloader", "");
     std::string device;
 
-    if (bootloader.find("G550T1") != std::string::npos) {
-        /* SM-G550T1 on5ltemtr TODO: replace the fingerprints with the right ones */
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G550T1");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/on5ltemtr/on5ltemtr:6.0.1/MMB29K/G550T1UVU2AQC4:user/release-keys");
-        property_override("ro.system.build.fingerprint", "samsung/on5ltemtr/on5ltemtr:6.0.1/MMB29K/G550T1UVU2AQC4:user/release-keys");
-        property_override("ro.build.description", "on5ltemtr-user 6.0.1 MMB29K G550T1UVU2AQC4 release-keys");
+    if (bootloader.find("J320W8") != std::string::npos) {
+        /* SM-J320W8 on5ltemtr TODO: replace the fingerprints with the right ones */
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-J320W8");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j3xltebmc/j3xltebmc:7.1.1/NMF26X/J320W8VLU2BQK1:user/release-keys");
+        property_override("ro.system.build.fingerprint", "ro.system.build.fingerprint");
+        property_override("ro.build.description", "j3xltebmc-user 7.1.1 NMF26X J320W8VLU2BQK1 release-keys");
     }
 
     device = GetProperty("ro.product.device", "");

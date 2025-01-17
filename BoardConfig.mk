@@ -17,9 +17,9 @@
 # Inherit from universal3475-common
 include device/samsung/universal3475-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/on5ltetmo
+LOCAL_PATH := device/samsung/j3xltebmc
 
-TARGET_OTA_ASSERT_DEVICE := on5lte,on5ltetmo,on5ltemtr
+TARGET_OTA_ASSERT_DEVICE := j3xlteatt,j3xltebmc
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
@@ -39,7 +39,7 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_on5ltetmo
+TARGET_INIT_VENDOR_LIB := libinit_j3xltebmc
 
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
@@ -53,7 +53,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4261412864
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage-on5ltetmo_defconfig
+TARGET_KERNEL_CONFIG := lineage-j3xltebmc_defconfig
 
 # Shim
 TARGET_LD_SHIM_LIBS += \
