@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/j3xltebmc
+LOCAL_PATH := device/samsung/j3xltexx
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -25,16 +25,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := lineage_j3xltebmc
-PRODUCT_DEVICE := j3xltebmc
+PRODUCT_NAME := lineage_j3xltexx
+PRODUCT_DEVICE := j3xltexx
 PRODUCT_MODEL := SM-J320W8
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=j3xltebmc \
-    PRIVATE_BUILD_DESC="j3xltebmc-user 7.1.1 NMF26X J320W8VLU2BQK1 release-keys"
+    PRODUCT_NAME=j3xltexx \
+    PRIVATE_BUILD_DESC="j3xltexx-user 7.1.1 NMF26X J320W8VLU2BQK1 release-keys"
 
-BUILD_FINGERPRINT=samsung/j3xltebmc/j3xltebmc:7.1.1/NMF26X/J320W8VLU2BQK1:user/release-keys
+BUILD_FINGERPRINT=samsung/j3xltexx/j3xltexx:7.1.1/NMF26X/J320W8VLU2BQK1:user/release-keys
 

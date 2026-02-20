@@ -68,9 +68,9 @@ void vendor_load_properties()
     if (bootloader.find("J320W8") != std::string::npos) {
         /* SM-J320W8 on5ltemtr TODO: replace the fingerprints with the right ones */
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-J320W8");
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j3xltebmc/j3xltebmc:7.1.1/NMF26X/J320W8VLU2BQK1:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/j3xltexx/j3xltexx:7.1.1/NMF26X/J320W8VLU2BQK1:user/release-keys");
         property_override("ro.system.build.fingerprint", "ro.system.build.fingerprint");
-        property_override("ro.build.description", "j3xltebmc-user 7.1.1 NMF26X J320W8VLU2BQK1 release-keys");
+        property_override("ro.build.description", "j3xltexx-user 7.1.1 NMF26X J320W8VLU2BQK1 release-keys");
     }
 
     device = GetProperty("ro.product.device", "");

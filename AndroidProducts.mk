@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/j3xltebmc
+LOCAL_PATH := device/samsung/j3xltexx
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_PATH)/lineage_j3xltebmc.mk
+    $(LOCAL_PATH)/lineage_j3xltexx.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_j3xltebmc-user \
-    lineage_j3xltebmc-userdebug \
-    lineage_j3xltebmc-eng
+    lineage_j3xltexx-user \
+    lineage_j3xltexx-userdebug \
+    lineage_j3xltexx-eng
